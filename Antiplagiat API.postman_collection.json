@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "51216257-e7b2-4f0d-9a9e-be71d6c29d2f",
+		"name": "Antiplagiat API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50757654",
+		"_collection_link": "https://krasnozhopiq-babuin-6929114.postman.co/workspace/%D0%A0%D0%B0%D0%B4%D0%B0%D0%BC%D0%B8%D1%80-%D0%9D%D1%83%D1%80%D0%BC%D0%B0%D0%B3%D0%BE%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2's-Workspac~19a3c0f1-382e-444e-8016-5ba323a0796e/collection/50757654-51216257-e7b2-4f0d-9a9e-be71d6c29d2f?action=share&source=collection_link&creator=50757654"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "StudentName",
+							"value": "Petrov",
+							"type": "text"
+						},
+						{
+							"key": "TaskId",
+							"value": "Task1",
+							"type": "text"
+						},
+						{
+							"key": "File",
+							"type": "file",
+							"src": "/Users/radamirnurmagomedov/Documents/1.rtf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5005/gateway/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"gateway",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Analyze File(Ivanov)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fileId\": \"82bd649a-8dcc-444b-8730-97de9ffdabbe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/gateway/analyze",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"gateway",
+						"analyze"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
