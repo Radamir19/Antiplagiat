@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  filestorage:
+    build:
+      context: .
+      dockerfile: FileStorageService/Dockerfile
+    container_name: filestorage
+    networks:
+      - app-network
+    volumes:
+      - ./data/uploads:/app/uploads # Персистентность файлов
+
+  analysis:
+    build:
+      context: .
+      dockerfile: AnalysisService/Dockerfile
+    container_name: analysis
+    networks:
+      - app-network
+    depends_on:
+      - filestorage
+
+  gateway:
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    container_name: gateway
+    ports:
+      - "5005:8080" # Внешний порт 5005 смотрит на внутренний 8080 Ocelot'а
+    networks:
+      - app-network
+    depends_on:
+      - filestorage
+      - analysis
+
+networks:
+  app-network:
+    driver: bridge

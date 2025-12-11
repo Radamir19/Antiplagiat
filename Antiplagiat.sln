@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antiplagiat", "Antiplagiat\Antiplagiat.csproj", "{E3749DBA-CCB2-4CB0-BBD9-F8593C486A07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{73C87135-B15E-49B8-A62A-64892196674B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorageService", "FileStorageService\FileStorageService.csproj", "{D1771E37-6C86-4F21-9B9E-99297A512A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisService", "AnalysisService\AnalysisService.csproj", "{2A95527C-4B35-4179-B5C1-706B2F6E4F0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3749DBA-CCB2-4CB0-BBD9-F8593C486A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3749DBA-CCB2-4CB0-BBD9-F8593C486A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3749DBA-CCB2-4CB0-BBD9-F8593C486A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3749DBA-CCB2-4CB0-BBD9-F8593C486A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C87135-B15E-49B8-A62A-64892196674B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C87135-B15E-49B8-A62A-64892196674B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C87135-B15E-49B8-A62A-64892196674B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C87135-B15E-49B8-A62A-64892196674B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1771E37-6C86-4F21-9B9E-99297A512A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1771E37-6C86-4F21-9B9E-99297A512A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1771E37-6C86-4F21-9B9E-99297A512A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1771E37-6C86-4F21-9B9E-99297A512A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A95527C-4B35-4179-B5C1-706B2F6E4F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A95527C-4B35-4179-B5C1-706B2F6E4F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A95527C-4B35-4179-B5C1-706B2F6E4F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A95527C-4B35-4179-B5C1-706B2F6E4F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
